@@ -1,11 +1,11 @@
 import "modern-normalize";
 import css from "./App.module.css";
-import CafeInfo from "../CafeInfo/CafeInfo.tsx";
-import VoteOptions from "../VoteOptions/VoteOptions.tsx";
+import CafeInfo from "../CafeInfo/CafeInfo";
+import VoteOptions from "../VoteOptions/VoteOptions";
 import { useState } from "react";
 import type { Votes, VoteType } from "../../types/votes.ts";
-import VoteStats from "../VoteStats/VoteStatus.tsx";
-import Notification from "../Notification/Notification.tsx";
+import VoteStats from "../VoteStats/VoteStats";
+import Notification from "../Notification/Notification";
 
 export default function App() {
   const [votes, setVotes] = useState<Votes>({
